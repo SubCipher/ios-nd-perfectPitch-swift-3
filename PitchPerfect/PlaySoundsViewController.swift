@@ -13,7 +13,6 @@ class PlaySoundsViewController: UIViewController {
    
     @IBOutlet weak var chipmunkButton: UIButton!
     @IBOutlet weak var vaderButton: UIButton!
-    
     @IBOutlet weak var stopButton: UIButton!
     
     var recordedAudioURL: URL!
@@ -27,10 +26,10 @@ class PlaySoundsViewController: UIViewController {
     @IBAction func playSoundForButton(_ sender: UIButton) {
         
         switch(ButtonType(rawValue: sender.tag)!) {
-        case .chipmunk:
-            playSound(pitch: 1000)
-        case .vader:
-            playSound(pitch: -1000)
+            case .chipmunk:
+                playSound(pitch: 1000)
+            case .vader:
+                playSound(pitch: -1000)
         }
         configureUI(.playing)
     }
@@ -43,6 +42,7 @@ class PlaySoundsViewController: UIViewController {
         super.viewDidLoad()
         setupAudio()
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         configureUI(.notPlaying)

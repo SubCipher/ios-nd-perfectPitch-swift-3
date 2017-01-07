@@ -36,8 +36,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         let pathArray = [dirPath, reordingName]
         let filePath = URL(string: pathArray.joined(separator: "/"))
 
-        _ = AVAudioSession.sharedInstance()
-        
         try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
         audioRecorder.delegate = self
         audioRecorder.isMeteringEnabled = true

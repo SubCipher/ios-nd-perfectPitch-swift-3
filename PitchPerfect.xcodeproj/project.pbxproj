@@ -13,7 +13,7 @@
 		200E0BDF1E1AF15E00B7A9AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200E0BDE1E1AF15E00B7A9AB /* Assets.xcassets */; };
 		200E0BE21E1AF15E00B7A9AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 200E0BE01E1AF15E00B7A9AB /* LaunchScreen.storyboard */; };
 		202C65EF1E200CB7006BB037 /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202C65EE1E200CB7006BB037 /* PlaySoundsViewController+Audio.swift */; };
-		2077990E1E1EA4AB001FCDE0 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077990D1E1EA4AB001FCDE0 /* PlaySoundsViewController.swift */; };
+		2086BCD81E215FBA00A66A19 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2086BCD71E215FBA00A66A19 /* PlaySoundsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		200E0BE11E1AF15E00B7A9AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		200E0BE31E1AF15E00B7A9AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		202C65EE1E200CB7006BB037 /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
-		2077990D1E1EA4AB001FCDE0 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaySoundsViewController.swift; path = ../PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		2086BCD71E215FBA00A66A19 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				200E0BD71E1AF15E00B7A9AB /* AppDelegate.swift */,
-				2077990D1E1EA4AB001FCDE0 /* PlaySoundsViewController.swift */,
+				2086BCD71E215FBA00A66A19 /* PlaySoundsViewController.swift */,
 				200E0BD91E1AF15E00B7A9AB /* RecordSoundsViewController.swift */,
-				200E0BDB1E1AF15E00B7A9AB /* Main.storyboard */,
 				202C65EE1E200CB7006BB037 /* PlaySoundsViewController+Audio.swift */,
+				200E0BDB1E1AF15E00B7A9AB /* Main.storyboard */,
 				200E0BDE1E1AF15E00B7A9AB /* Assets.xcassets */,
 				200E0BE01E1AF15E00B7A9AB /* LaunchScreen.storyboard */,
 				200E0BE31E1AF15E00B7A9AB /* Info.plist */,
@@ -145,7 +145,7 @@
 			files = (
 				202C65EF1E200CB7006BB037 /* PlaySoundsViewController+Audio.swift in Sources */,
 				200E0BDA1E1AF15E00B7A9AB /* RecordSoundsViewController.swift in Sources */,
-				2077990E1E1EA4AB001FCDE0 /* PlaySoundsViewController.swift in Sources */,
+				2086BCD81E215FBA00A66A19 /* PlaySoundsViewController.swift in Sources */,
 				200E0BD81E1AF15E00B7A9AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

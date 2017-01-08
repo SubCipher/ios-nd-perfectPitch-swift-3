@@ -25,7 +25,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     //check which audio button is pressed to determine event action
     enum recordingState: Int { case startRecording = 0, stopRecording }
 
-    func audioControls(audioRecordState: recordingState) {
+    func recordingControls(audioRecordState: recordingState) {
         let audioSetting: (recordSetting: Bool,recordLabel: String,stopSetting: Bool)
         
         switch(audioRecordState){
@@ -42,7 +42,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     @IBAction func recordAudio(_ sender: Any) {
        
-        audioControls(audioRecordState: recordingState.startRecording)
+        recordingControls(audioRecordState: recordingState.startRecording)
         
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         let reordingName = "recordedVoice.wav"
@@ -58,7 +58,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     @IBAction func stopRecording(_ sender: Any) {
         
-        audioControls(audioRecordState: recordingState.stopRecording)
+        recordingControls(audioRecordState: recordingState.stopRecording)
         audioRecorder.stop()
         
         let audioSession = AVAudioSession.sharedInstance()

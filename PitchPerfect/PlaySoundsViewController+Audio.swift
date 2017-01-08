@@ -2,7 +2,7 @@
 //  PlaySoundsViewController+Audio.swift
 //  PitchPerfect
 //
-//  Copyright © 2017 StepwiseDesigns. All rights reserved.
+//  Copyright Â© 2016 Udacity. All rights reserved.
 //
 
 import UIKit
@@ -154,9 +154,12 @@ extension PlaySoundsViewController: AVAudioPlayerDelegate {
     }
     
     func setPlayButtonsEnabled(_ enabled: Bool) {
-       
+        snailButton.isEnabled = enabled
         chipmunkButton.isEnabled = enabled
+        rabbitButton.isEnabled = enabled
         vaderButton.isEnabled = enabled
+        echoButton.isEnabled = enabled
+        reverbButton.isEnabled = enabled
     }
     
     func showAlert(_ title: String, message: String) {

@@ -61,7 +61,6 @@ class PlaySoundsViewController: UIViewController {
         vaderButton.imageView?.contentMode = .scaleAspectFit
         echoButton.imageView?.contentMode = .scaleAspectFit
         reverbButton.imageView?.contentMode = .scaleAspectFit
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -23,16 +23,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iXm-Rh-x0n">
-                                <rect key="frame" x="16" y="64" width="343" height="503"/>
+                                <rect key="frame" x="16" y="64" width="343" height="528"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Rjv-TV-dY3">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="439"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="464"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="iRZ-Gd-bag">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="387.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="410"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEN-Em-QNC">
-                                                        <rect key="frame" x="0.0" y="232.5" width="343" height="155"/>
+                                                        <rect key="frame" x="0.0" y="255" width="343" height="155"/>
                                                         <state key="normal" image="Record"/>
                                                         <connections>
                                                             <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kvf-HM-0ak"/>
@@ -41,10 +41,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ro3-9W-uoj">
-                                                <rect key="frame" x="0.0" y="387.5" width="343" height="51.5"/>
+                                                <rect key="frame" x="0.0" y="410" width="343" height="54"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nw4-ZU-HMJ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="51.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="54"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -54,7 +54,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7am-sI-tl7">
-                                        <rect key="frame" x="0.0" y="439" width="343" height="64"/>
+                                        <rect key="frame" x="0.0" y="464" width="343" height="64"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PF3-iA-bNL">
                                                 <rect key="frame" x="139.5" y="0.0" width="64" height="64"/>
@@ -76,7 +76,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.94635599416201244" blue="0.45239951451117999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iXm-Rh-x0n" secondAttribute="bottom" constant="100" id="KgZ-Bx-USc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iXm-Rh-x0n" secondAttribute="bottom" constant="75" id="KgZ-Bx-USc"/>
                             <constraint firstItem="iXm-Rh-x0n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Sux-kg-M2a"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iXm-Rh-x0n" secondAttribute="trailing" id="vI6-Wf-oGn"/>
                             <constraint firstItem="iXm-Rh-x0n" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wsP-6X-7Vy"/>

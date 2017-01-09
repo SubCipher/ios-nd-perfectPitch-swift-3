@@ -20,29 +20,21 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         stopRecordingButton.isEnabled = false
+        recordButton.imageView?.contentMode = .scaleAspectFit
+        stopRecordingButton.imageView?.contentMode = .scaleAspectFit
     }
     
-    //check which audio button is pressed to determine event action
-    enum recordingState: Int { case startRecording = 0, stopRecording }
-
-    func recordingControls(audioRecordState: recordingState) {
-        let audioSetting: (recordSetting: Bool,recordLabel: String,stopSetting: Bool)
+    //abstration based on suggestion of code review, org enum/switch can be seen in git repo
+    func recordingControls(isRecording: Bool) {
+        recordingLabel.text = isRecording ? "Recording in progress" : "Tap to record"
+        recordButton.isEnabled = isRecording ? false : true
+        stopRecordingButton.isEnabled = isRecording ? true : false
         
-        switch(audioRecordState){
-            case .startRecording:
-                audioSetting = (recordSetting: false, recordLabel: "Recoding in Progress",stopSetting: true)
-            case .stopRecording:
-                audioSetting = (recordSetting: true,recordLabel: "Tap to Record",stopSetting: false)
-        }
-        
-        recordButton.isEnabled = audioSetting.recordSetting
-        recordingLabel.text = audioSetting.recordLabel
-        stopRecordingButton.isEnabled = audioSetting.stopSetting
     }
     
     @IBAction func recordAudio(_ sender: Any) {
        
-        recordingControls(audioRecordState: recordingState.startRecording)
+        recordingControls(isRecording: true)
         
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         let reordingName = "recordedVoice.wav"
@@ -58,7 +50,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     @IBAction func stopRecording(_ sender: Any) {
         
-        recordingControls(audioRecordState: recordingState.stopRecording)
+        recordingControls(isRecording: false)
         audioRecorder.stop()
         
         let audioSession = AVAudioSession.sharedInstance()

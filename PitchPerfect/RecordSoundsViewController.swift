@@ -41,7 +41,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         let pathArray = [dirPath, reordingName]
         let filePath = URL(string: pathArray.joined(separator: "/"))
 
-        //while not a requirement I am working on code suggestion for using do{try..} catch{displayAlert} here
+        //while not a requirement I am working on code suggestion for using do{try..} catch{displayAlert} in RecordSoundsViewController
         //first couple of implementation broke the app (lines 46 - 50(?))
         try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
         audioRecorder.delegate = self

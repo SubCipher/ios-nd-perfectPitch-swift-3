@@ -26,7 +26,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     //abstration based on suggestion of code review, org enum/switch can be seen in git repo
     func recordingControls(isRecording: Bool) {
-        recordingLabel.text = isRecording ? "Recording in progress" : "Tap to record"
+        recordingLabel.text = isRecording ? "Recording in Progress" : "Tap to Record"
         recordButton.isEnabled = isRecording ? false : true
         stopRecordingButton.isEnabled = isRecording ? true : false
         
@@ -41,6 +41,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         let pathArray = [dirPath, reordingName]
         let filePath = URL(string: pathArray.joined(separator: "/"))
 
+        //while not a requirement I am working on code suggestion for using do{try..} catch{displayAlert} here
+        //first couple of implementation broke the app (lines 46 - 50(?))
         try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
         audioRecorder.delegate = self
         audioRecorder.isMeteringEnabled = true
